@@ -1,0 +1,18 @@
+﻿<div ng-controller="clienteCadastrarController as vm">
+
+<form ng-submit="vm.salvar()">
+    <div class="form-group">
+        <label>Nome</label>
+        <input type="text" class="form-control" ng-model="vm.cliente.nome" />
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" ng-model="vm.cliente.email" />
+    </div>
+
+    <button type="submit" class="btn-success"> Salvar </button>
+
+</form>
+
+</div>
