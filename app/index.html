@@ -1,9 +1,22 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
 <head>
     <title></title>
 </head>
 <body>
+    <!-- a diretiva (atributo) ui-view serve para renderizar os templates
+        que eu defini na configuração da minha rota -->
+    <div ui-view>
 
+    </div>
+
+    <!-- Importamos o angular, ele tem que ser o primeiro arquivo -->
+    <script src="libs/angular.min.js"></script>
+
+    <!-- Importamos o arquivo de rotas -->
+    <script src="libs/angular-ui-router.js"></script>
+
+    <script src="modules/application/app.module.js"></script>
+    <script src="modules/application/app.config.js"></script>
 </body>
 </html>
