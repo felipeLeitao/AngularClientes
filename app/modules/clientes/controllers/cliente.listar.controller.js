@@ -20,23 +20,12 @@
         clienteService.listar().then(sucesso, erro);
 
         function sucesso(retorno) {
-            vm.listaClientes = retorno;
+            vm.listaClientes = retorno.data;
         }
 
         function erro() {
-            vm.listaClientes =
-                [
-                    {
-                        Nome: "Felipe Silva",
-                        Email : "1234 5678"
-                    },
-                    {
-                        Nome: "Felipe Silva",
-                        Email : "1234 5678"
-                    }
-                ];
+            alert("deu ruim");
         }
     }
-
 
 })();
